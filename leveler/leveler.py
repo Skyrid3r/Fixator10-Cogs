@@ -2786,7 +2786,7 @@ class Leveler(commands.Cog):
 
     async def draw_rank(self, user, server):
         # fonts
-        font_thin_file = f"{bundled_data_path(self)}/Uni_Sans_Thin.ttf"
+        font_thin_file = f"{bundled_data_path(self)}/SourceSansPro-Regular.ttf"
         font_heavy_file = f"{bundled_data_path(self)}/Uni_Sans_Heavy.ttf"
         font_bold_file = f"{bundled_data_path(self)}/SourceSansPro-Semibold.ttf"
 
@@ -3031,7 +3031,7 @@ class Leveler(commands.Cog):
 
     async def draw_levelup(self, user, server):
         # fonts
-        font_thin_file = f"{bundled_data_path(self)}/Uni_Sans_Thin.ttf"
+        font_thin_file = f"{bundled_data_path(self)}/SourceSansPro-Regular.ttf"
         level_fnt = ImageFont.truetype(font_thin_file, 23)
 
         userinfo = db.users.find_one({"user_id": str(user.id)})
